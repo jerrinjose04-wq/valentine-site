@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#ff4d6d" />
+  <title>Valentine ❤️</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="heart">❤️</span>
+      <span class="brandText">Valentine</span>
+    </div>
+
+    <nav class="nav">
+      <button class="navBtn" data-go="home">Proposal</button>
+      <button class="navBtn" data-go="gift">Gift</button>
+      <button class="navBtn" data-go="special">Special</button>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <!-- HOME -->
+    <section class="card view" id="view-home">
+      <div class="iconCircle">❤️</div>
+      <h1 id="mainQuestion">Will you be my Valentine? 💝</h1>
+      <p class="sub">Be honest. But also… choose wisely 😌</p>
+
+      <div class="btnRow">
+        <button class="btn yes" id="yesBtn">Yes! ❤️</button>
+        <button class="btn no" id="noBtn">No 💔</button>
+      </div>
+
+      <p class="tiny" id="clickCount">Click count: 0</p>
+    </section>
+
+    <!-- CELEBRATION -->
+    <section class="card view hidden" id="view-celebration">
+      <h1 class="yay">YAYYYYYY!!!!</h1>
+      <p class="sub">I knew you’d say yes ❤️✨</p>
+
+      <div class="btnRow" style="margin-top:18px;">
+        <button class="btn soft" data-go="gift">Here’s a little gift 🎁</button>
+      </div>
+
+      <p class="tiny">Scroll-stopping levels of cute incoming 😌</p>
+    </section>
+
+    <!-- GIFT PAGE -->
+    <section class="card view hidden" id="view-gift">
+      <h1>My little gift for you ❤️</h1>
+      <p class="sub" id="giftText">A sweet message goes here.</p>
+
+      <div class="grid" id="galleryGrid"></div>
+
+      <div class="giftBox" style="margin-top:18px;">
+        <p class="sub" style="margin:0;">
+          You make every day special 💗
+        </p>
+      </div>
+
+      <div class="btnRow" style="margin-top:18px;">
+        <button class="btn soft" data-go="special">Here’s a special gift ✈️</button>
+      </div>
+
+      <button class="linkBtn" data-go="celebration">Back</button>
+    </section>
+
+    <!-- SPECIAL GIFT PAGE -->
+    <section class="card view hidden" id="view-special">
+      <h1>Our reunion ✈️❤️</h1>
+      <p class="sub">I can’t wait to see you.</p>
+
+      <div class="giftBox">
+        <img id="flightImg" alt="Flight ticket" />
+        <p class="tiny">Put your flight screenshot in <b>assets</b> and set the filename in <b>script.js</b></p>
+      </div>
+
+      <h2 class="sectionTitle">Countdown ⏳</h2>
+      <div class="countGrid">
+        <div class="countBox"><div class="num" id="d">0</div><div class="label">Days</div></div>
+        <div class="countBox"><div class="num" id="h">0</div><div class="label">Hours</div></div>
+        <div class="countBox"><div class="num" id="m">0</div><div class="label">Minutes</div></div>
+        <div class="countBox"><div class="num" id="s">0</div><div class="label">Seconds</div></div>
+      </div>
+
+      <p class="sub" id="countdownLabel">Feb 14th • 10:00 AM Melbourne, Australia 🇦🇺</p>
+
+      <button class="linkBtn" data-go="gift">Back to photos</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
